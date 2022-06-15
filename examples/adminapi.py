@@ -156,7 +156,7 @@ def example_create_acls(a, args):
     try:
         fs = a.create_acls(acl_bindings, request_timeout=10)
     except ValueError as e:
-        print(f"Invalid input: {e}")
+        print(f"create_acls() failed: {e}")
         return
 
     # Wait for operation to finish.
